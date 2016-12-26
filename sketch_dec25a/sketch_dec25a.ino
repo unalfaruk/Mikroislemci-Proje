@@ -21,7 +21,18 @@ void loop() {
   digitalWrite(trigPin, LOW);
   sure = pulseIn(echoPin, HIGH);
   mesafe = (sure/2) / 29.1;
-     if (mesafe > 200 || mesafe < 0){
+
+  if(mesafe>200 || mesafe <0){
+    Serial.println("Temiz");
+  }else if(mesafe<200 && mesafe >150){
+    Serial.println("150 200 arası");
+  }else if(mesafe<150 && mesafe >100){
+    Serial.println("100 150 arası");
+  }else if(mesafe<100){
+    Serial.println("100 altı");
+  }
+    
+     /*if (mesafe > 200 || mesafe < 0){
      digitalWrite(motorPin,HIGH);
      Serial.println("Menzil Disi");
      }
@@ -32,7 +43,7 @@ void loop() {
      }else{
      digitalWrite(motorPin,HIGH);
      Serial.println(mesafe);
-     }
-  delay(500);
+     }*/
+  delay(200);
 
 }
