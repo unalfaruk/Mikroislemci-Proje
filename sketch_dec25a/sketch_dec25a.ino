@@ -2,6 +2,10 @@ int trigPin=7;
 int echoPin=6;
 int yesilLed=12;
 int kirmiziLed=13;
+int sagMotorInput1=2;
+int sagMotorInput2=3;
+int solMotorInput1=4;
+int solMotorInput2=5;
 
 int ses=11;
 int oncekiDurum;
@@ -41,6 +45,7 @@ void uyariSistemi(int uyariSeviyesi) {
   }
   
   sesUyariSistemi(uyariSeviyesi,mesafe);
+  motorKontrol(uyariSeviyesi);
   
 }
 
@@ -72,10 +77,14 @@ void setup() {
   pinMode(kirmiziLed, OUTPUT);
   pinMode(yesilLed, OUTPUT);
   pinMode(ses, OUTPUT);
+  pinMode(sagMotorInput1, OUTPUT);
+  pinMode(sagMotorInput2, OUTPUT);
+  pinMode(solMotorInput1, OUTPUT);
+  pinMode(solMotorInput2, OUTPUT);
   Serial.println("Pinler ayarlandı.");
 }
 
-void loop() {
+void loop() { 
   long sure;
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
