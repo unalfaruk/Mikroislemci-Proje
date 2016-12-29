@@ -12,8 +12,11 @@ Ultrasonik sensör ile engel tespit eden ve mesafeye göre kademe kademe tepki v
 > Güvenli durumdan tehlikeli duruma doğru 3,2,1,0 sıralaması yapılırsa;
 
 Kademe 3 - Araç seyrinde ilerler, yeşil led sürekli yanarak tehlikeli durumun olmadığını ifade eder.
+
 Kademe 2 - Araç seyrinde ilerler ancak çok uzakta bir mesafe tespit edildiği içi yeşil led yanıp söner.
+
 Kademe 1 - Araç motorların gücünü keser ve mesafenin kısalığıyla doğru orantılı olacak şekilde kırmızı led yanar söner. Ayrıca sesli uyarı sisteme devreye girer ve led ile birlikte tepki verir.
+
 Kademe 0 (Tehlikeli) - Araç motorları engelden uzaklaşacak yönde çevirir. Kırmızı led sürekli yanan haldedir.
 
 ### Kurulum ve Yukleme
