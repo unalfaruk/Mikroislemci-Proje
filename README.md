@@ -21,7 +21,7 @@ Kademe 0 (Tehlikeli) - Araç motorları engelden uzaklaşacak yönde çevirir. K
 
 ### Kurulum ve Yukleme
 
-Devre kurulumuna ait ekran görüntüleri yüklenecektir.
+kurulum.jpg görseli takip edilerek devre kurulabilir.
 
 ### Malzemeler
 
